@@ -23,4 +23,15 @@ The analysis code also contains additional optional functions:
 Note that some functions need the outputs of previous functions (e.g. calculate_X needs alpha and lambda from steps vii and viii), and hence when changing parameters or rebinning, these inputs should be recalculated. However, the entire analysis does not need to be rerun for each change.
 
 See the code comments for instructions on each function input and structure. Below are select plots to demonstrate some functions. _Note due to the unpublished nature of this research project, not all step outputs can be plotted_. 
-  
+
+Output of plot_A for one delay with unmasked=True input
+<br/><img src='/Example Figures/A.png' alt="Average A" width="200"/>
+
+Output of L_curve_select for one delay. The different colors are for different pump bins with the start denoting the selected hyperparameter. Note how the selection is at the "elbow" inflection point which is desired.
+<br/><img src='/Example Figures/l_search.png' alt="Hyperparameter selection" width="200"/>
+
+Output of alpha_scan for one delay. In the first plot, different colors are for different alpha parameters. The dotted line is the fit. In the second plot, the red dotted line is the fit.
+<br/><img src='/Example Figures/alpha.png' alt="Alpha scan" width="400"/>
+
+Output of calculate_X for one delay. The different colors are for different pump bins.
+<br/><img src='/Example Figures/X.png' alt="X calculation" width="200"/>
